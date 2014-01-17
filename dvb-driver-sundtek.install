@@ -1,7 +1,0 @@
-post_install() {
-  systemctl enable sundtek.service 
-}
-
-pre_remove() {
-  systemctl disable sundtek.service 
-}
