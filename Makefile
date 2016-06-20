@@ -20,7 +20,6 @@ install:
 	@mkdir -p $(DESTDIR)
 	tar xzmf ${ARCH}/installer.tar.gz -C $(DESTDIR)
 	@rm -rf $(DESTDIR)/etc/udev/rules.d/80-mediasrv.rules
-	@rm -rf $(DESTDIR)/etc/udev/rules.d/80-remote-eeti.rules
 	chmod gou=sx $(DESTDIR)/opt/bin/mediasrv
 	@mkdir -p $(DESTDIR)/usr/lib/pm-utils/sleep.d
 	cp $(DESTDIR)/opt/lib/pm/10mediasrv $(DESTDIR)/usr/lib/pm-utils/sleep.d/
