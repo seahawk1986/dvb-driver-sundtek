@@ -8,8 +8,6 @@ case "$1" in
             if [ -f /sbin/ldconfig ]; then
               /sbin/ldconfig >/dev/null 2>&1
             fi
-
-            /opt/bin/mediaclient --start
        ;;
 
 esac
